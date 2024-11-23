@@ -1,0 +1,45 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+        <div class="game-area">
+            <div class="word">
+               
+            </div>
+            <div class="hangman">
+                <div class="base"></div>
+                <div class="pole"></div>
+                <div class="beam"></div>
+                <div class="rope"></div>
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+            </div>
+            <div class="input-area">
+                <label for="difficulty">Escolha a dificuldade:</label>
+                <select id="difficulty">
+                    <option value="facil">Fácil</option>
+                    <option value="medio" selected>Médio</option>
+                    <option value="dificil">Difícil</option>
+                </select>
+                
+                <label for="guess">Digite uma letra:</label>
+                <input type="text" id="guess" maxlength="1">
+                <button id="submit-guess">Enviar</button>
+            </div>
+        </div>
+        <p class="attempts">Tentativas restantes: <span id="remaining-attempts">6</span></p>
+        <p class="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
